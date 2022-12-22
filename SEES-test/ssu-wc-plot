@@ -1,0 +1,26 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var table = ee.FeatureCollection("projects/rhearai/assets/2022_enriched_ssu_merged"),
+    imageCollection = ee.ImageCollection("ESA/WorldCover/v100");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Load a FeatureCollection from a table dataset: 'RESOLVE' ecoregions.
+var ssu = ee.FeatureCollection('projects/rhearai/assets/2022_enriched_ssu_merged');
+var wc = ee.ImageCollection("ESA/WorldCover/v100").first();
+// Display as default and with a custom color.
+//Map.addLayer( wc, {}, 'default display');
+// Map.addLayer( ssu, {color: 'FF1000'}, 'colored');
+
+
+var ssu_visual = {
+  bands: ['Map'],
+};
+
+var visualization = {
+  bands: ['Map'],
+};
+
+
+Map.centerObject(ssu);
+
+Map.addLayer(wc, visualization, "Landcover").setOpacity(0.5);
+Map.addLayer( ssu, ssu_visual, 'CEO Data').setOpacity(1);
+// Map.addLegend(title="ESA Land Cover", builtin_legend='ESA_WorldCover')

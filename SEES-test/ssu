@@ -1,0 +1,9 @@
+/**** Start of imports. If edited, may not auto-convert in the playground. ****/
+var table = ee.FeatureCollection("projects/rhearai/assets/2022_enriched_ssu_merged");
+/***** End of imports. If edited, may not auto-convert in the playground. *****/
+// Load a FeatureCollection from a table dataset: 'RESOLVE' ecoregions.
+var ecoregions = ee.FeatureCollection('projects/rhearai/assets/2022_enriched_ssu_merged');
+
+// Display as default and with a custom color.
+Map.addLayer(ecoregions, {}, 'default display');
+Map.addLayer(ecoregions, {color: 'FF0000'}, 'colored');
