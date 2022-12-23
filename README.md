@@ -9,4 +9,4 @@ IVSS Presentation Deck: https://docs.google.com/presentation/d/1p6Yc8i8re1983V1X
 
 Google Geo for Good Poster: https://docs.google.com/presentation/d/1D0ZU-YULHP7C9AeUuEhy9mbr34yrqcKjYRYcxYnlJPw/edit
 
-AGU Fall 2022 Meeting iPoster (presented on 12/15, will update with link
+AGU Fall 2022 Meeting iPoster : https://agu2022fallmeeting-agu.ipostersessions.com/?s=CE-F5-D8-11-38-E1-8B-EF-63-22-9F-45-AD-EC-53-4E
